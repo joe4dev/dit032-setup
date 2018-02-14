@@ -11,10 +11,10 @@
 ## PostgreSQL
 
 1) Install [PostgreSQL](https://www.postgresql.org/) with Homebrew: https://www.youtube.com/watch?v=IbVPbF7HTL4&t=9s
-  * Install: `brew install postgresql`
-  * Run daemon: `pg_ctl -D /usr/local/var/postgres start`
-  * Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
-  * Create user (within psql shell): `CREATE ROLE app_user WITH LOGIN PASSWORD 'app_password';`
+      * Install: `brew install postgresql`
+      * Run daemon: `pg_ctl -D /usr/local/var/postgres start`
+      * Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
+      * Create user (within psql shell): `CREATE ROLE app_user WITH LOGIN PASSWORD 'app_password';`
 
 ## MongoDB
 
