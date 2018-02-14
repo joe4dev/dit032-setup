@@ -1,12 +1,18 @@
 # PostgreSQL
 
 * Docs: https://www.postgresql.org/docs/10/static/index.html
+* Curated list of resources: https://github.com/dhamaniasad/awesome-postgres
+
+## GUI Apps
+
+* pgAdmin 4: https://www.pgadmin.org/download/
 
 ## psql shell
 
 Start the psql shell with `psql postgres` (`psql -U username dbname`)`
 
 * Docs: https://www.postgresql.org/docs/current/static/app-psql.html
+* Cheat Sheet: https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546
 * Show help `\?`
 * List databases `\l`
 * List users `\du`
