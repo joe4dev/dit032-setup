@@ -1,25 +1,13 @@
 # DIT 032 – Data Management Setup
 
+
+## Installation
+
 * [macOS](macOS.md)
 * [Windows](Windows.md)
 * [Linux](Linux.md)
 
-## PostgreSQL
+## Getting Started
 
-* Downloads: https://www.postgresql.org/download/
-
-### macOS
-
-* How to install MongoDB on Mac: 
-
-### Windows
-
-
-## MongoDB
-
-* Downloads: https://www.mongodb.com/download-center?jmp=nav#community
-
-### macOS
-
-
-### Windows
+* [PostgreSQL](PostgreSQL.md)
+* [MongoDB](MongoDB.md)

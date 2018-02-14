@@ -1,4 +1,4 @@
-# macOS
+# Windows
 
 ## Preparation
 
@@ -13,7 +13,7 @@
 1) Install [PostgreSQL](https://www.postgresql.org/) with Homebrew: https://www.youtube.com/watch?v=IbVPbF7HTL4&t=9s
   * Install: `brew install postgresql`
   * Run daemon: `pg_ctl -D /usr/local/var/postgres start`
-  * Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
+  * Run [psql](https://www.postgresql.org/docs/10/static/app-psql.html) shell: `psql postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
   * Create user (within psql shell): `CREATE ROLE app_user WITH LOGIN PASSWORD 'app_password';`
 
 ## MongoDB
@@ -22,4 +22,4 @@
     * Textual (plus tip on how to setup as a background service): https://gist.github.com/nrollr/9f523ae17ecdbb50311980503409aeb3
     * Install: `brew install mongodb`
     * Run daemon: `mongod --config /usr/local/etc/mongod.conf`
-    * Start [mongo](https://docs.mongodb.com/manual/mongo/) shell: `mongo`
+    * Run [mongo](https://docs.mongodb.com/manual/mongo/) shell: `mongo`
