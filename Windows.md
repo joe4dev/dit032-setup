@@ -50,7 +50,7 @@
 
 ## MongoDB
 
-1. Install [MongoDB](https://www.mongodb.com/) with Chocolatey `choco install mongodb -y` (as admin!)
+1. Install [MongoDB](https://www.mongodb.com/) with Chocolatey `choco install mongodb -y` (as admin!) => FAILS as of 2018-02-15
 2. Reopen your shell (not as admin)
 3. Start the [mongo](https://docs.mongodb.com/manual/mongo/) shell: `mongo`
 4. Check whether `show dbs` lists all your current databases
