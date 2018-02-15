@@ -4,6 +4,7 @@
 
 1. Familiarize yourself with the very basics of the Windows command line<sup>[1](#cmd)</sup> (5'): https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/
 2. Don't forget to re-open your shell whenever you update any system environment variables.
+3. Keep in mind to change the `/` in file paths to `\` accordingly
 
 <sup><a name="cmd">1.</a> You might want to use a better console emulator at some point (e.g., [cmder](http://cmder.net/) or [Hyper](https://hyper.is/)).</sup>
 

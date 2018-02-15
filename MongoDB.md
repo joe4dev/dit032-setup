@@ -12,9 +12,23 @@
 
 ## mongo shell
 
-Start the mongo shell with `mongo`
+Start the mongo shell with `mongo` (or `mongo my_database`)
 
 * Docs: https://docs.mongodb.com/manual/mongo/
-* Show current database `db`
+* List databases `show dbs`
 * Use database `use app_database`
+* Show current database `db`
 * Format printed results  `db.myCollection.find().pretty()`
+* Quit `quit()`
+
+## Import Data
+
+```
+# macOS shell
+mongoimport −d plants −c plants /path/to/plants.json
+mongoimport −d plants −c gardens /path/to/gardens.json
+
+# Windows shell
+mongoimport /d plants /c plants C:\path\to\plants.json
+mongoimport /d plants /c gardens C:\path\to\gardens.json
+```
