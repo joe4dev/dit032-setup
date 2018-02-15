@@ -16,6 +16,22 @@
 2. Start the [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
 3. Check whether `\l` lists all your current databases
 
+## Maven (for jdbc project)
+
+1. Install [Maven](https://maven.apache.org/index.html) with Homebrew: https://www.youtube.com/watch?v=xTzLGcqUf8k
+    * `brew install maven`
+2. Verify installation with `mvn --version`:
+
+    ```
+    mvn --version
+    Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T09:58:13+02:00)
+    Maven home: /usr/local/Cellar/maven/3.5.2/libexec
+    Java version: 9.0.4, vendor: Oracle Corporation
+    Java home: /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+    Default locale: en_CH, platform encoding: UTF-8
+    OS name: "mac os x", version: "10.13.3", arch: "x86_64", family: "mac"
+    ```
+
 ## MongoDB
 
 1. Install [MongoDB](https://www.mongodb.com/) with Homebrew: https://www.youtube.com/watch?v=yPBgsyY8Rmk&t=9s

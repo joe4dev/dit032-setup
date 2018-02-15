@@ -7,7 +7,7 @@
 ## PostgreSQL
 
 1. Install [PostgreSQL](https://www.postgresql.org/): https://www.youtube.com/watch?v=e1MwsT5FJRQ
-    * Download: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+    * Download: https://www.enterprisedb.comcho/downloads/postgres-postgresql-downloads
     * Textual tutorial: http://www.postgresqltutorial.com/install-postgresql/
 2. Run `SET PGCLIENTENCODING=UTF8` in your command line
 3. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname`)
@@ -25,6 +25,15 @@
    1. Change the [active console code page](https://ss64.com/nt/chcp.html) respectively using `chcp 1252` (or 65001 for UTF-8)
 
 5. Check whether `\l` lists all your current databases
+
+## Maven (for jdbc project)
+
+1. Install [Maven](https://maven.apache.org/index.html): https://youtu.be/dlPjiYyVSlc?t=21s
+    1. Download binary zip: https://maven.apache.org/download.cgi
+    2. Unzip into a folder (e.g., `C:\dev\Maven`)
+    3. Setup system variables `M2_HOME` and `MAVEN_HOME` pointing to your folder (e.g., `C:\dev\Maven`)
+    4. Add ``%M2_HOME%\bin`` and `%MAVEN_HOME%\bin` to your PATH
+2. Verify installation with `mvn --version`
 
 ## MongoDB
 

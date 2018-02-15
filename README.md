@@ -5,6 +5,8 @@ Please let us know if something doesn't work, something misses, and if you found
 ## Versions
 
 * PostgreSQL `>=10.2`
+* JDK `>=9.0.4` (should also work with JDK8)
+* Maven `>=3.5.2`
 * MongoDB `>=3.6.2` (Notice that older versions before 3.6.x do NOT support [new features](https://docs.mongodb.com/master/release-notes/3.6/) such as [$expr](https://docs.mongodb.com/master/reference/operator/query/expr/#op._S_expr))
 
 ## Installation
