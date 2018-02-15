@@ -22,8 +22,7 @@
 
     postgres=#
     ```
-
-  Change the [active console code page](https://ss64.com/nt/chcp.html) respectively using `chcp 1252` (UTF-8 = 65001)
+   1. Change the [active console code page](https://ss64.com/nt/chcp.html) respectively using `chcp 1252` (or 65001 for UTF-8)
 
 5. Check whether `\l` lists all your current databases
 
