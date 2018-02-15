@@ -11,5 +11,6 @@ These steps show how you open the pre-configured IntelliJ project.
 
 ## Command Line
 
-1. `cd /path/to/jdbc`
-2. `mvn compile`
+1. Locate project: `cd /path/to/jdbc`
+2. Compile (automatically downloads dependencies): `mvn compile`
+3. Run *JDBCTestDriver* `mvn exec:java -D"exec.mainClass"="se.chalmers.dm.JDBCTestDriver"`
