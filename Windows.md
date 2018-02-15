@@ -2,7 +2,13 @@
 
 ## Preparation
 
-1. Familiarize yourself with the very basics of the Windows command line (5'): https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/
+1. Familiarize yourself with the very basics of the Windows command line<sup>[1](#cmd)</sup> (5'): https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/
+2. Install the [Chocolatey](https://chocolatey.org/) package manager: https://youtu.be/hfgZYpo5moA?t=1m2s
+    1. Run your `cmd` shell *Run as administrator* !
+    2. [Install command](https://chocolatey.org/install) `@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
+    3. Verify the installation via `choco --version` and it should output the installed version (e.g., `0.10.8`)
+
+<a name="cmd">1</a>: You might want to use a better console emulator at some point (e.g., [cmder](http://cmder.net/)).
 
 ## PostgreSQL
 
