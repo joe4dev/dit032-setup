@@ -7,6 +7,7 @@
 ## PostgreSQL
 
 1) Install [PostgreSQL](https://www.postgresql.org/): https://www.youtube.com/watch?v=e1MwsT5FJRQ
+    * Download: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
     * Textual tutorial: http://www.postgresqltutorial.com/install-postgresql/
     * Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql postgres` (`psql -U username dbname`)
 

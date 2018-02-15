@@ -22,12 +22,15 @@ Start the psql shell with `psql postgres` (`psql -U username dbname`)`
 
 * Create user: https://www.postgresql.org/docs/current/static/sql-createrole.html
     - [psql] `CREATE ROLE app_user WITH LOGIN PASSWORD 'app_password';`
+    - Tip: You can setup a [.pgpass](https://www.postgresql.org/docs/current/static/libpq-pgpass.html) password file if you don't want to automate login.
+* Change password: https://www.postgresql.org/docs/current/static/sql-alterrole.html
+    - [psql] `ALTER ROLE app_user WITH PASSWORD 'new_password';`
 * Create database: https://www.postgresql.org/docs/current/static/sql-createdatabase.html
-    - [psql] `CREATE DATABASE app_database;`
+    - [psql] `CREATE DATABASE app_database WITH OWNER app_user;`
 * Drop database: https://www.postgresql.org/docs/current/static/sql-dropdatabase.html
     - [psql] `DROP DATABASE app_database;`
 
 ## Import / Run SQL Code
 
-* [shell] psql −U app_user −f ./create_schema.sql app_database
-* [psql] `\i /your/full/path/goes/here/create_schema.sql`
+* [shell] psql −U app_user −f /full/path/to/create_schema.sql app_database
+* [psql] `\i /full/path/to/create_schema.sql`
