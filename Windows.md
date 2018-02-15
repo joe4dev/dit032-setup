@@ -13,12 +13,11 @@
 
 ## PostgreSQL
 
-1. Install [PostgreSQL](https://www.postgresql.org/): https://www.youtube.com/watch?v=e1MwsT5FJRQ
-    * Download: https://www.enterprisedb.comcho/downloads/postgres-postgresql-downloads
-    * Textual tutorial: http://www.postgresqltutorial.com/install-postgresql/
-2. Run `SET PGCLIENTENCODING=UTF8` in your command line
-3. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname`)
-4. Check for any startup warnings. If you see a warning that the console code page differs from Windows code page:
+1. Install [PostgreSQL](https://www.postgresql.org/) with Chocolatey `choco install postgresql -y` (as admin!)
+2. Reopen your shell (not as admin)
+3. Run `SET PGCLIENTENCODING=UTF8` in your command line
+4. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname`) using the default password `Postgres1234`
+5. Check for any startup warnings. If you see a warning that the console code page differs from Windows code page:
 
     ```
     psql (10.2)
@@ -35,18 +34,23 @@
 
 ## Maven (for jdbc project)
 
-1. Install [Maven](https://maven.apache.org/index.html): https://youtu.be/dlPjiYyVSlc?t=21s
-    1. Download binary zip: https://maven.apache.org/download.cgi
-    2. Unzip into a folder (e.g., `C:\dev\Maven`)
-    3. Setup system variables `M2_HOME` and `MAVEN_HOME` pointing to your folder (e.g., `C:\dev\Maven`)
-    4. Add ``%M2_HOME%\bin`` and `%MAVEN_HOME%\bin` to your PATH
-2. Verify installation with `mvn --version`
+1. Install [Maven](https://maven.apache.org/index.html) with Chocolatey `choco install maven -y` (as admin! This will also install a JDK 8 if not present)
+2. Reopen your shell (not as admin)
+3. Verify installation with `mvn --version`
+
+    ```
+    C:\Users\joe>mvn --version
+    Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T09:58:13+02:00)
+    Maven home: C:\ProgramData\chocolatey\lib\maven\apache-maven-3.5.2\bin\..
+    Java version: 1.8.0_162, vendor: Oracle Corporation
+    Java home: C:\Program Files\Java\jdk1.8.0_162\jre
+    Default locale: en_US, platform encoding: Cp1252
+    OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+    ```
 
 ## MongoDB
 
-1. Install [MongoDB](https://www.mongodb.com/)
-    * Short tutorial (4'): https://www.youtube.com/watch?v=_RQ4lET5ejw
-    * Long tutorial (12'): [Installing MongoDB on Windows](https://www.coursera.org/learn/introduction-mongodb/lecture/Hadhu/installing-mongodb-on-windows)
-    * Run the daemon: `mongod --port 27017 --dbpath C:\MongoDB\data\db`
-2. Start the [mongo](https://docs.mongodb.com/manual/mongo/) shell: `mongo`
-3. Check whether `show dbs` lists all your current databases
+1. Install [MongoDB](https://www.mongodb.com/) with Chocolatey `choco install mongodb -y` (as admin!)
+2. Reopen your shell (not as admin)
+3. Start the [mongo](https://docs.mongodb.com/manual/mongo/) shell: `mongo`
+4. Check whether `show dbs` lists all your current databases
