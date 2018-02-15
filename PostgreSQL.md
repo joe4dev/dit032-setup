@@ -26,7 +26,7 @@ Start the psql shell with `psql postgres` (`psql -U username dbname`)`
 * Change password: https://www.postgresql.org/docs/current/static/sql-alterrole.html
     - [psql] `ALTER ROLE app_user WITH PASSWORD 'new_password';`
 * Create database: https://www.postgresql.org/docs/current/static/sql-createdatabase.html
-    - [psql] `CREATE DATABASE app_database WITH OWNER app_user;`
+    - [psql] `CREATE DATABASE app_database WITH OWNER app_user ENCODING 'UTF8';`
 * Drop database: https://www.postgresql.org/docs/current/static/sql-dropdatabase.html
     - [psql] `DROP DATABASE app_database;`
 
