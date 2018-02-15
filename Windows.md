@@ -9,7 +9,7 @@
     3. Verify the installation via `choco --version` and it should output the installed version (e.g., `0.10.8`)
 
 
-<sup><a name="cmd">1</a> You might want to use a better console emulator at some point (e.g., [cmder](http://cmder.net/) or [Hyper](https://hyper.is/)).</sup>
+<sup><a name="cmd">1.</a> You might want to use a better console emulator at some point (e.g., [cmder](http://cmder.net/) or [Hyper](https://hyper.is/)).</sup>
 
 ## PostgreSQL
 
