@@ -2,7 +2,7 @@
 
 ## Preparation
 
-1) Familiarize yourself with the very basics of the macOS command line (5 min): http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line
+1) Familiarize yourself with the very basics of the macOS command line (5'): http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line
 2) Install the [Homebrew](https://brew.sh) package manager: https://www.youtube.com/watch?v=Yr5gyqeMadk
     * Install: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
     * Check installation: `brew doctor`
