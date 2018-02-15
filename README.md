@@ -1,5 +1,7 @@
 # DIT 032 – Data Management Setup
 
+Please let us know if something doesn't work, something misses, and if you found a better solution!
+
 ## Versions
 
 * PostgreSQL `>=10.2`
