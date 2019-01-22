@@ -10,12 +10,12 @@
 
 ## PostgreSQL
 
-1. Install [PostgreSQL](https://www.postgresql.org/): https://www.youtube.com/watch?v=e1MwsT5FJRQ
-    * Download: https://www.enterprisedb.comcho/downloads/postgres-postgresql-downloads
-    * Textual tutorial: http://www.postgresqltutorial.com/install-postgresql/
-2. Run `SET PGCLIENTENCODING=UTF8` in your command line
-3. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname`)
-4. Check for any startup warnings. If you see a warning that the console code page differs from Windows code page:
+1. Install [PostgreSQL](https://www.postgresql.org/download/windows/): [Tutorial](http://www.postgresqltutorial.com/install-postgresql/) or [Video](https://www.youtube.com/watch?v=e1MwsT5FJRQ)
+    * Download: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+2. Add `C:\Program Files\PostgreSQL\11\bin;` to the PATH (computer => properties => advanced system settings=> Environment Variables => System Variables) as described [here](https://stackoverflow.com/questions/30401460/postgres-psql-not-recognized-as-an-internal-or-external-command?answertab=active#tab-top)
+3. Run `SET PGCLIENTENCODING=UTF8` in your command line
+4. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname`)
+5. Check for any startup warnings. If you see a warning that the console code page differs from Windows code page:
 
     ```none
     psql (10.2)
@@ -28,7 +28,7 @@
     ```
    1. Change the [active console code page](https://ss64.com/nt/chcp.html) respectively using `chcp 1252` (or 65001 for UTF-8)
 
-5. Check whether `\l` lists all your current databases
+6. Check whether `\l` lists all your current databases
 
 ## Java SDK (for jdbc project)
 
