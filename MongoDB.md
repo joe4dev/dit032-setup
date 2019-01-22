@@ -23,7 +23,10 @@ Start the mongo shell with `mongo` (or `mongo my_database`)
 
 ## Import Data
 
-```
+A JSON data dump file will be provided in assignment 3.
+So you can skip this part for now.
+
+```bash
 # macOS shell
 mongoimport −d plants −c plants /path/to/plants.json
 mongoimport −d plants −c gardens /path/to/gardens.json
