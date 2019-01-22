@@ -41,7 +41,7 @@
 
 ## Maven (for jdbc project)
 
-1. Install [Maven](https://maven.apache.org/index.html): https://youtu.be/dlPjiYyVSlc?t=21s
+1. Install [Maven](https://maven.apache.org/index.html): [Video](https://youtu.be/dlPjiYyVSlc?t=21s) or [Tutorial](https://downlinko.com/download-install-apache-maven-3-5-0-windows.html)
     1. Download binary zip: https://maven.apache.org/download.cgi
     2. Unzip into a folder (e.g., `C:\dev\Maven`)
     3. Setup system variables `M2_HOME` and `MAVEN_HOME` pointing to your folder (e.g., `C:\dev\Maven`) wherein bin, boot, conf, lib etc reside
