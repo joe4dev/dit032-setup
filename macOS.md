@@ -16,20 +16,32 @@
 2. Start the [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
 3. Check whether `\l` lists all your current databases
 
-## Maven (for jdbc project)
+## Java Development Kit (JDK)
+
+1. Download and install a Java JDK: https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
+
+    > Checkout [this StackOverflow post](https://stackoverflow.com/a/52524114/6875981) for more (advanced) installation options
+
+2. Verify installation with `java --version`:
+
+    ```none
+    openjdk 11.0.1 2018-10-16
+    OpenJDK Runtime Environment 18.9 (build 11.0.1+13)
+    OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
+    ```
+
+## Maven (for jdbc project in Assignment 2)
 
 1. Install [Maven](https://maven.apache.org/index.html) with Homebrew: https://www.youtube.com/watch?v=xTzLGcqUf8k
     * `brew install maven`
 2. Verify installation with `mvn --version`:
 
-    ```
-    mvn --version
-    Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T09:58:13+02:00)
-    Maven home: /usr/local/Cellar/maven/3.5.2/libexec
-    Java version: 9.0.4, vendor: Oracle Corporation
-    Java home: /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+    ```none
+    Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T20:41:47+02:00)
+    Maven home: /usr/local/Cellar/maven/3.6.0/libexec
+    Java version: 11.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home
     Default locale: en_CH, platform encoding: UTF-8
-    OS name: "mac os x", version: "10.13.3", arch: "x86_64", family: "mac"
+    OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
     ```
 
 ## MongoDB

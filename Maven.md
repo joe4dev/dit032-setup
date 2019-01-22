@@ -14,3 +14,12 @@ These steps show how you open the pre-configured IntelliJ project.
 1. Locate project: `cd /path/to/jdbc`
 2. Compile (automatically downloads dependencies): `mvn compile`
 3. Run *JDBCTestDriver* `mvn exec:java -D"exec.mainClass"="se.chalmers.dm.JDBCTestDriver"`
+
+## Switch Project JDK
+
+If you get an error message such as "Project SDK is not defined"
+
+1. Go to `File > Project Structure ...`
+2. Select an installed SDK:
+
+    ![Project Structure Settings](img/intellij-project-structure.png)

@@ -17,7 +17,7 @@
 3. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql -U postgres postgres` (`psql -U username dbname`)
 4. Check for any startup warnings. If you see a warning that the console code page differs from Windows code page:
 
-    ```
+    ```none
     psql (10.2)
     WARNING: Console code page (437) differs from Windows code page (1252)
          8-bit characters might not work correctly. See psql reference
@@ -48,7 +48,7 @@
     4. Add `%M2_HOME%\bin` to your Path (don't forget to click OK, OK)
 2. Check whether `mvn --version` displays the version. Example:
 
-    ```
+    ```none
     C:\Users\joe>mvn --version
     Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T09:58:13+02:00)
     Maven home: C:\dev\Maven\bin\..
