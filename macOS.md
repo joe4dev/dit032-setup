@@ -32,7 +32,7 @@
 
 ## Maven (for jdbc project in Assignment 2)
 
-1. Install [Maven](https://maven.apache.org/index.html) with Homebrew: https://www.youtube.com/watch?v=xTzLGcqUf8k
+1. Install [Maven](https://maven.apache.org/index.html) with Homebrew: [Tutorial](https://github.com/rajivkanaujia/alphaworks/wiki/Installing-Maven)
     * `brew install maven`
 2. Verify installation with `mvn --version`:
 
