@@ -22,7 +22,7 @@ Start the psql shell with `psql postgres` (`psql -U username dbname`)`
 
 * Create user: https://www.postgresql.org/docs/current/static/sql-createrole.html
     - [psql] `CREATE ROLE app_user WITH LOGIN PASSWORD 'app_password';`
-    - Tip: You can setup a [.pgpass](https://www.postgresql.org/docs/current/static/libpq-pgpass.html) password file if you don't want to automate login.
+    - Tip: You can setup a [.pgpass](https://www.postgresql.org/docs/current/static/libpq-pgpass.html) password file to automate login (i.e., that you do not need to retype the password).
 * Change password: https://www.postgresql.org/docs/current/static/sql-alterrole.html
     - [psql] `ALTER ROLE app_user WITH PASSWORD 'new_password';`
 * Create database: https://www.postgresql.org/docs/current/static/sql-createdatabase.html
