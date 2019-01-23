@@ -39,13 +39,13 @@ Two options to execute SQL code:
 
 Steps to import the [MONDIAL database](https://www.dbis.informatik.uni-goettingen.de/Mondial/) dump:
 
-1. Create a [user](https://www.postgresql.org/docs/current/sql-createuser.html)/[role](https://www.postgresql.org/docs/current/sql-createrole.html) called `mondial` and a [database](https://www.postgresql.org/docs/current/sql-createdatabase.html) called `mondial_db` owned by the mondial user
+1. Create a [user](https://www.postgresql.org/docs/current/sql-createuser.html)/[role](https://www.postgresql.org/docs/current/sql-createrole.html) called `mondial` with password `mondial` and a [database](https://www.postgresql.org/docs/current/sql-createdatabase.html) called `mondial_db` owned by the mondial user
 
     ```none
     # [bash]
     psql -U postgres postgres
     # [psql]
-    CREATE USER mondial;
+    CREATE USER mondial WITH PASSWORD 'mondial';
     CREATE DATABASE mondial_db WITH OWNER mondial;
     # Quit interactive session
     \q
