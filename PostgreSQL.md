@@ -32,5 +32,43 @@ Start the psql shell with `psql postgres` (`psql -U username dbname`)`
 
 ## Import / Run SQL Code
 
+Two options to execute SQL code:
+
 * [shell] psql −U app_user −f /full/path/to/create_schema.sql app_database
 * [psql] `\i /full/path/to/create_schema.sql`
+
+Steps to import the [MONDIAL database](https://www.dbis.informatik.uni-goettingen.de/Mondial/) dump:
+
+1. Create a [user](https://www.postgresql.org/docs/current/sql-createuser.html)/[role](https://www.postgresql.org/docs/current/sql-createrole.html) called `mondial` and a [database](https://www.postgresql.org/docs/current/sql-createdatabase.html) called `mondial_db` owned by the mondial user
+
+    ```none
+    # [bash]
+    psql -U postgres postgres
+    # [psql]
+    CREATE USER mondial;
+    CREATE DATABASE mondial_db WITH OWNER mondial;
+    # Quit interactive session
+    \q
+    ```
+
+2. Download the schema (`create_schema.sql`) and input values (`insert_inputs.sql`) from [Canvas](https://chalmers.instructure.com/courses/3790/files/folder/assignments)
+3. Import the schema and values
+
+    ```bash
+    psql −q −U mondial −f ./create_schema.sql mondial_db
+    psql −q −U mondial −f ./insert_inputs.sql mondial_db
+    ```
+
+4. Connect to the mondial database with the terminal client psql
+
+    ```bash
+    psql −U mondial mondial_db
+    ```
+
+5. Verify whether the following query yields `1318`
+
+    ```none
+    SELECT COUNT(iatacode) FROM airport;
+    ```
+
+Tip: You can use [dropdb](https://www.postgresql.org/docs/current/app-dropdb.html) or [sql-dropdatabase](https://www.postgresql.org/docs/current/sql-dropdatabase.html) `DROP DATABASE mondial;` to destroy your database and start from scratch.
