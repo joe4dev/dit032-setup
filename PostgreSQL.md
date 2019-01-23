@@ -9,7 +9,7 @@
 
 ## psql shell
 
-Start the psql shell with `psql postgres` (`psql -U username dbname`)`
+Start the psql shell with `psql postgres postgres` (`psql dbname username`)`
 
 * Docs: https://www.postgresql.org/docs/current/static/app-psql.html
 * Cheat Sheet: https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546
@@ -21,14 +21,14 @@ Start the psql shell with `psql postgres` (`psql -U username dbname`)`
 ## Administration
 
 * Create user: https://www.postgresql.org/docs/current/static/sql-createrole.html
-    - [psql] `CREATE ROLE app_user WITH LOGIN PASSWORD 'app_password';`
-    - Tip: You can setup a [.pgpass](https://www.postgresql.org/docs/current/static/libpq-pgpass.html) password file to automate login (i.e., that you do not need to retype the password).
+  * [psql] `CREATE ROLE app_user WITH LOGIN PASSWORD 'app_password';`
+  * Tip: You can setup a [.pgpass](https://www.postgresql.org/docs/current/static/libpq-pgpass.html) password file to automate login (i.e., that you do not need to retype the password).
 * Change password: https://www.postgresql.org/docs/current/static/sql-alterrole.html
-    - [psql] `ALTER ROLE app_user WITH PASSWORD 'new_password';`
+  * [psql] `ALTER ROLE app_user WITH PASSWORD 'new_password';`
 * Create database: https://www.postgresql.org/docs/current/static/sql-createdatabase.html
-    - [psql] `CREATE DATABASE app_database WITH OWNER app_user ENCODING 'UTF8';`
+  * [psql] `CREATE DATABASE app_database WITH OWNER app_user ENCODING 'UTF8';`
 * Drop database: https://www.postgresql.org/docs/current/static/sql-dropdatabase.html
-    - [psql] `DROP DATABASE app_database;`
+  * [psql] `DROP DATABASE app_database;`
 
 ## Import / Run SQL Code
 
@@ -43,7 +43,7 @@ Steps to import the [MONDIAL database](https://www.dbis.informatik.uni-goettinge
 
     ```none
     # [bash]
-    psql -U postgres postgres
+    psql postgres postgres
     # [psql]
     CREATE USER mondial WITH PASSWORD 'mondial';
     CREATE DATABASE mondial_db WITH OWNER mondial;
@@ -52,20 +52,29 @@ Steps to import the [MONDIAL database](https://www.dbis.informatik.uni-goettinge
     ```
 
 2. Download the schema (`create_schema.sql`) and input values (`insert_inputs.sql`) from [Canvas](https://chalmers.instructure.com/courses/3790/files/folder/assignments)
-3. Import the schema and values
+3. Change directory where the downloaded files are
 
-    ```bash
-    psql −q −U mondial −f ./create_schema.sql mondial_db
-    psql −q −U mondial −f ./insert_inputs.sql mondial_db
+    ```shell
+    # MacOS/Linux uses slashes / for paths
+    cd $HOME/Downloads
+    # Windows uses backslashes \ for paths
+    cd %USERPROFILE%\Downloads
     ```
 
-4. Connect to the mondial database with the terminal client psql
+4. Import the schema and values
 
     ```bash
-    psql −U mondial mondial_db
+    psql −q −f create_schema.sql mondial_db mondial
+    psql −q −f insert_inputs.sql mondial_db mondial
     ```
 
-5. Verify whether the following query yields `1318`
+5. Connect to the mondial database with the terminal client psql
+
+    ```bash
+    psql mondial_db mondial
+    ```
+
+6. Verify whether the following query yields `1318`
 
     ```none
     SELECT COUNT(iatacode) FROM airport;

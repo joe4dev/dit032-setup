@@ -14,7 +14,7 @@
       * Install: `brew install postgresql`
       * NOTE: This will automatically create a superuser (i.e., admin) called `postgres` with no password
 2. Start the postgres server: `pg_ctl -D /usr/local/var/postgres start`
-3. Start the [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell client: `psql -U postgres postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
+3. Start the [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell client: `psql postgres postgres` (`psql dbname username` note the `-U` option comes before the dbname unlike in the video!)
 4. Check whether `\l` lists all your current databases
 
 Tip: You can setup the postgres server as a service (i.e., auto-start with your computer) using `brew services start postgresql`
