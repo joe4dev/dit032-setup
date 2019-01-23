@@ -30,6 +30,13 @@
 
 6. Check whether `\l` lists all your current databases
 
+Tip: How do I start the PostgreSQL server (e.g., after re-booting)?
+
+```shell
+set PGDATA=C:\Program Files\PostgreSQL\11\data
+pg_ctl start
+```
+
 ## Java SDK (for jdbc project)
 
 1. Install the Java SDK: https://www.youtube.com/watch?v=fTpDHQ_V0Fw
