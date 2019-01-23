@@ -12,6 +12,7 @@
 
 1. Install [PostgreSQL](https://www.postgresql.org/) with Homebrew: [Video](https://www.youtube.com/watch?v=IbVPbF7HTL4&t=9s)
       * Install: `brew install postgresql`
+      * NOTE: This will automatically create a superuser (i.e., admin) called `postgres` with no password
 2. Start the postgres server: `pg_ctl -D /usr/local/var/postgres start`
 3. Start the [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell client: `psql -U postgres postgres` (`psql -U username dbname` note the `-U` option comes before the dbname unlike in the video!)
 4. Check whether `\l` lists all your current databases
