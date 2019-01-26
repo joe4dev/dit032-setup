@@ -1,5 +1,9 @@
 # Maven
 
+## Prerequisites
+
+JDK and Maven installed (see [Installation](./README#Installation))
+
 ## IntelliJ
 
 These steps show how you open the pre-configured IntelliJ project.
