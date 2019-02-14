@@ -28,10 +28,9 @@ So you can skip this part for now.
 
 ```bash
 # macOS shell
-mongoimport −d plants −c plants /path/to/plants.json
-mongoimport −d plants −c gardens /path/to/gardens.json
-
+mongoimport -d conferences -c conferences conferences.json
+mongoimport -d conferences -c delegates delegates.json
 # Windows shell
-mongoimport /d plants /c plants C:\path\to\plants.json
-mongoimport /d plants /c gardens C:\path\to\gardens.json
+mongoimport /d conferences /c conferences conferences.json
+mongoimport /d conferences /c delegates delegates.json
 ```
