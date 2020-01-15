@@ -78,7 +78,7 @@ How can I create a postgres superuser if none exists?
 1. Install [MongoDB](https://www.mongodb.com/): [short (4')](https://www.youtube.com/watch?v=_RQ4lET5ejw) or [long (12')](https://www.coursera.org/learn/introduction-mongodb/lecture/Hadhu/installing-mongodb-on-windows) tutorial
     1. Download the *Community Server*: https://www.mongodb.com/download-center?jmp=nav#community
     2. Run the installer (choose *Complete*, you can uncheck the Compass GUI if you wanna speed up installation)
-    3. Setup system variable `MONGO_HOME` pointing to your installation (e.g., `C:\Program Files\MongoDB\Server\3.6`)
+    3. Setup system variable `MONGO_HOME` pointing to your installation (e.g., `C:\Program Files\MongoDB\Server\4.0`)
     4. Add `%MONGO_HOME%\bin` to your Path (don't forget to click OK, OK)
 2. Create a data directory: `mkdir -p C:\data\db`
 3. Run the daemon `mongod` and keep this shell open (it should finally show `NETWORK  [initandlisten] waiting for connections on port 27017`)
