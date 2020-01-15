@@ -2,7 +2,7 @@
 
 This documentation helps you to setup the software used during the Data Management course.
 
-> Please let us know in the [Canvas discussion forum](https://chalmers.instructure.com/courses/3790/discussion_topics/1176) if something doesn't work, something misses, and if you found a better solution!
+> Please let us know in the Canvas discussion forum if something doesn't work, something misses, and if you found a better solution!
 
 ## Software List
 
