@@ -1,5 +1,7 @@
 # Windows
 
+> Keep an eye on version numbers and remember to update them if you use another version!
+
 ## Preparation
 
 1. Familiarize yourself with the very basics of the Windows command line<sup>[1](#cmd)</sup> (5'): https://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/
@@ -12,7 +14,7 @@
 
 1. Install [PostgreSQL](https://www.postgresql.org/download/windows/): [Tutorial](http://www.postgresqltutorial.com/install-postgresql/) or [Video](https://www.youtube.com/watch?v=e1MwsT5FJRQ)
     * Download: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
-2. Add `C:\Program Files\PostgreSQL\11\bin;` to the PATH (computer => properties => advanced system settings=> Environment Variables => System Variables) as described [here](https://stackoverflow.com/questions/30401460/postgres-psql-not-recognized-as-an-internal-or-external-command?answertab=active#tab-top)
+2. Add `C:\Program Files\PostgreSQL\12\bin;` to the PATH (computer => properties => advanced system settings=> Environment Variables => System Variables) as described [here](https://stackoverflow.com/questions/30401460/postgres-psql-not-recognized-as-an-internal-or-external-command?answertab=active#tab-top)
 3. Run `SET PGCLIENTENCODING=UTF8` in your command line
 4. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql postgres postgres` (`psql dbname username`)
 5. Check for any startup warnings. If you see a warning that the console code page differs from Windows code page:
@@ -35,7 +37,7 @@
 How do I start the PostgreSQL server (e.g., after re-booting)?
 
 ```shell
-set PGDATA=C:\Program Files\PostgreSQL\11\data
+set PGDATA=C:\Program Files\PostgreSQL\12\data
 pg_ctl start
 ```
 
@@ -76,9 +78,9 @@ How can I create a postgres superuser if none exists?
 ## MongoDB
 
 1. Install [MongoDB](https://www.mongodb.com/): [short (4')](https://www.youtube.com/watch?v=_RQ4lET5ejw) or [long (12')](https://www.coursera.org/learn/introduction-mongodb/lecture/Hadhu/installing-mongodb-on-windows) tutorial
-    1. Download the *Community Server*: https://www.mongodb.com/download-center?jmp=nav#community
+    1. Download the *Community Server*: https://www.mongodb.com/download-center/community
     2. Run the installer (choose *Complete*, you can uncheck the Compass GUI if you wanna speed up installation)
-    3. Setup system variable `MONGO_HOME` pointing to your installation (e.g., `C:\Program Files\MongoDB\Server\4.0`)
+    3. Setup system variable `MONGO_HOME` pointing to your installation (e.g., `C:\Program Files\MongoDB\Server\4.2`)
     4. Add `%MONGO_HOME%\bin` to your Path (don't forget to click OK, OK)
 2. Create a data directory: `mkdir -p C:\data\db`
 3. Run the daemon `mongod` and keep this shell open (it should finally show `NETWORK  [initandlisten] waiting for connections on port 27017`)
