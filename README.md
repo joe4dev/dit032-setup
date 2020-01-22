@@ -8,10 +8,10 @@ This documentation helps you to setup the software used during the Data Manageme
 
 We typically recommend to install the latest version.
 
-* PostgreSQL server and psql client `>=11.1`
-* Java Development Kit (JDK) `>=11.0.1` (tested with JDK8, JDK9, JDK11)
+* PostgreSQL server and psql client `>=12.1`
+* Java Development Kit (JDK) `>=12.0.1` (tested with JDK8, JDK9, JDK11, JDK12)
 * Maven `>=3.6.0`
-* MongoDB `>=4.0.5` (Notice that older versions before 3.6.x do NOT support [new features](https://docs.mongodb.com/master/release-notes/3.6/) such as [$expr](https://docs.mongodb.com/master/reference/operator/query/expr/#op._S_expr))
+* MongoDB `>=4.2.2`
 * yED graph editor (for ER diagrams): https://www.yworks.com/products/yed
 * RelaX (online relational algebra calculator): https://dbis-uibk.github.io/relax/calc.htm?data=gist:7ec0be1be462f65818454ca3411c7b02#
   * Help: https://dbis-uibk.github.io/relax/help.htm
