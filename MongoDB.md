@@ -23,7 +23,7 @@ Start the mongo shell with `mongo` (or `mongo my_database`)
 
 ## Import Data
 
-A JSON data dump file will be provided in assignment 3.
+A JSON data dump file will be provided on Canvas in the respective assignment.
 So you can skip this part for now.
 
 ```bash
