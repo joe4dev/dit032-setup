@@ -33,7 +33,7 @@ Tip: You can setup the postgres server as a service (i.e., auto-start with your 
     OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
     ```
 
-## Maven (for jdbc project in Assignment 2)
+## Maven (for jdbc task)
 
 1. Install [Maven](https://maven.apache.org/index.html) with Homebrew: [Tutorial](https://github.com/rajivkanaujia/alphaworks/wiki/Installing-Maven)
     * `brew install maven`
