@@ -10,9 +10,6 @@ We typically recommend to install the latest version.
 
 * PostgreSQL server and psql client `>=13.1`
 * MongoDB `>=4.4.3`
-* yED graph editor (for ER diagrams): https://www.yworks.com/products/yed
-* RelaX (online relational algebra calculator): https://dbis-uibk.github.io/relax/calc/gist/7ec0be1be462f65818454ca3411c7b02
-  * Help: https://dbis-uibk.github.io/relax/help.htm
 
 ## Installation
 
