@@ -114,6 +114,8 @@ sudo systemctl enable --now mongodb
 ```
 Repeat `systemctl status mongodb` to make sure it is in fact running this time.
 
+note: the service file depends on your distribution, on Arch its `mongodb` and on Fedora its `mongod`.
+
 Then run the mongo command to open the interactive shell
 ```
 mongo
