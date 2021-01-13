@@ -19,34 +19,6 @@
 
 Tip: You can setup the postgres server as a service (i.e., auto-start with your computer) using `brew services start postgresql`
 
-## Java Development Kit (JDK)
-
-1. Download and install a Java JDK: https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
-
-    > Checkout [this StackOverflow post](https://stackoverflow.com/a/52524114/6875981) for more (advanced) installation options
-
-2. Verify installation with `java --version`:
-
-    ```none
-    openjdk 11.0.1 2018-10-16
-    OpenJDK Runtime Environment 18.9 (build 11.0.1+13)
-    OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
-    ```
-
-## Maven (for jdbc task)
-
-1. Install [Maven](https://maven.apache.org/index.html) with Homebrew: [Tutorial](https://github.com/rajivkanaujia/alphaworks/wiki/Installing-Maven)
-    * `brew install maven`
-2. Verify installation with `mvn --version`:
-
-    ```none
-    Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T20:41:47+02:00)
-    Maven home: /usr/local/Cellar/maven/3.6.0/libexec
-    Java version: 11.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home
-    Default locale: en_CH, platform encoding: UTF-8
-    OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
-    ```
-
 ## MongoDB
 
 1. Install [MongoDB](https://www.mongodb.com/) with Homebrew ([docs](https://github.com/mongodb/homebrew-brew))

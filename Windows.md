@@ -14,7 +14,7 @@
 
 1. Install [PostgreSQL](https://www.postgresql.org/download/windows/): [Tutorial](http://www.postgresqltutorial.com/install-postgresql/) or [Video](https://www.youtube.com/watch?v=e1MwsT5FJRQ)
     * Download: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
-2. Add `C:\Program Files\PostgreSQL\12\bin;` to the PATH (computer => properties => advanced system settings=> Environment Variables => System Variables) as described [here](https://stackoverflow.com/questions/30401460/postgres-psql-not-recognized-as-an-internal-or-external-command?answertab=active#tab-top)
+2. Add `C:\Program Files\PostgreSQL\13\bin;` to the PATH (computer => properties => advanced system settings=> Environment Variables => System Variables) as described [here](https://stackoverflow.com/questions/30401460/postgres-psql-not-recognized-as-an-internal-or-external-command?answertab=active#tab-top)
 3. Run `setx PGCLIENTENCODING UTF8` in your command line
 4. Start [psql](https://www.postgresql.org/docs/current/static/app-psql.html) shell: `psql postgres postgres` (`psql dbname username`)
 5. Check for any startup warnings. If you see a warning that the console code page differs from Windows code page:
@@ -37,7 +37,7 @@
 How do I start the PostgreSQL server (e.g., after re-booting)?
 
 ```shell
-set PGDATA=C:\Program Files\PostgreSQL\12\data
+set PGDATA=C:\Program Files\PostgreSQL\13\data
 pg_ctl start
 ```
 
@@ -46,34 +46,6 @@ pg_ctl start
 How can I create a postgres superuser if none exists?
 
 * [psql] `CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres'`
-
-## Java SDK (for jdbc project)
-
-1. Install the Java SDK: https://www.youtube.com/watch?v=fTpDHQ_V0Fw
-    1. Download: http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html
-    2. Run the installer
-    3. Setup system variable `JAVA_HOME` pointing to your *JDK* (e.g., `C:\Program Files\Java\jdk-9.0.4`)
-    4. Add `%JAVA_HOME%\bin` to your Path (don't forget to click OK, OK)
-2. Check whether `javac --version` displays the version (e.g., `javac 9.0.4`)
-
-## Maven (for jdbc project)
-
-1. Install [Maven](https://maven.apache.org/index.html): [Video](https://youtu.be/dlPjiYyVSlc?t=21s) or [Tutorial](https://downlinko.com/download-install-apache-maven-3-5-0-windows.html)
-    1. Download binary zip: https://maven.apache.org/download.cgi
-    2. Unzip into a folder (e.g., `C:\dev\Maven`)
-    3. Setup system variables `M2_HOME` and `MAVEN_HOME` pointing to your folder (e.g., `C:\dev\Maven`) wherein bin, boot, conf, lib etc reside
-    4. Add `%M2_HOME%\bin` to your Path (don't forget to click OK, OK)
-2. Check whether `mvn --version` displays the version. Example:
-
-    ```none
-    C:\Users\joe>mvn --version
-    Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T09:58:13+02:00)
-    Maven home: C:\dev\Maven\bin\..
-    Java version: 9.0.4, vendor: Oracle Corporation
-    Java home: C:\Program Files\Java\jdk-9.0.4
-    Default locale: en_US, platform encoding: Cp1252
-    OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
-    ```
 
 ## MongoDB
 
