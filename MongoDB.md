@@ -27,7 +27,7 @@ A JSON data dump file will be provided on Canvas in the respective assignment.
 So you can skip this part for now.
 
 ```bash
-# macOS shell
+# MacOS/Linux shell
 mongoimport -d conferences -c conferences conferences.json
 mongoimport -d conferences -c delegates delegates.json
 # Windows shell
