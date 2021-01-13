@@ -14,7 +14,7 @@ sudo pacman -S postgresql
 ```
 **Fedora**
 ```
-sudo dnf install postgresql
+sudo dnf install postgresql postgresql-server
 ```
 ### Setup
 Once installed make check if the postgresql server is running (or at least exists) with:
