@@ -49,12 +49,20 @@ How can I create a postgres superuser if none exists?
 
 ## MongoDB
 
+### Server
 1. Install [MongoDB](https://www.mongodb.com/): [short (4')](https://www.youtube.com/watch?v=_RQ4lET5ejw) or [long (12')](https://www.coursera.org/learn/introduction-mongodb/lecture/Hadhu/installing-mongodb-on-windows) tutorial
     1. Download the *Community Server*: https://www.mongodb.com/download-center/community
     2. Run the installer (choose *Complete*, you can uncheck the Compass GUI if you wanna speed up installation)
-    3. Setup system variable `MONGO_HOME` pointing to your installation (e.g., `C:\Program Files\MongoDB\Server\4.2`)
+    3. Setup system variable `MONGO_HOME` pointing to your installation (e.g., `C:\Program Files\MongoDB\Server\4.4`)
     4. Add `%MONGO_HOME%\bin` to your Path (don't forget to click OK, OK)
 2. Create a data directory: `mkdir -p C:\data\db`
 3. Run the daemon `mongod` and keep this shell open (it should finally show `NETWORK  [initandlisten] waiting for connections on port 27017`)
 4. Start the [mongo](https://docs.mongodb.com/manual/mongo/) shell in a new shell: `mongo`
 5. Check whether `show dbs` lists all your current databases (should list admin and local)
+
+### Tools
+1. Download and run the "Database Tools" installer: https://www.mongodb.com/try/download/database-tools
+2. Add the installed binary directory to your Path (e.g. by default this would be `C:\Program Files\MongoDB\Tools\100\bin`)
+3. Open a new command prompt and call `monogoimport --version`, if it returns no errors installation was succesful
+
+Detailed steps on how to add a directory to your PATH can be found [here](https://docs.mongodb.com/database-tools/installation/installation-windows/#make-the-db-tools-available-in-your-path).

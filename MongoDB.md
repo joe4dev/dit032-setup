@@ -34,3 +34,5 @@ mongoimport -d conferences -c delegates delegates.json
 mongoimport /d conferences /c conferences conferences.json
 mongoimport /d conferences /c delegates delegates.json
 ```
+
+_note: if the command is not recognized make sure the [Mongo Database Tools](https://www.mongodb.com/try/download/database-tools) are installed and accesible on your respective platform._

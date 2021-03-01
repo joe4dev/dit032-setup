@@ -69,7 +69,7 @@ Resources
 ### Installation
 **Ubuntu**
 ```
-sudo apt install mongodb
+sudo apt install mongodb mongo-tools
 ```
 **Arch**
 
