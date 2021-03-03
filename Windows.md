@@ -63,6 +63,6 @@ How can I create a postgres superuser if none exists?
 ### Tools
 1. Download and run the "Database Tools" installer: https://www.mongodb.com/try/download/database-tools
 2. Add the installed binary directory to your Path (e.g. by default this would be `C:\Program Files\MongoDB\Tools\100\bin`)
-3. Open a new command prompt and call `monogoimport --version`, if it returns no errors installation was succesful
+3. Open a new command prompt and call `mongoimport --version`, if it returns no errors installation was succesful
 
 Detailed steps on how to add a directory to your PATH can be found [here](https://docs.mongodb.com/database-tools/installation/installation-windows/#make-the-db-tools-available-in-your-path).
