@@ -67,10 +67,27 @@ Resources
 ## MongoDB
 
 ### Installation
-**Ubuntu**
+**Ubuntu <= 20.04**
+
+Simply install from the official repos:
 ```
 sudo apt install mongodb mongo-tools
 ```
+
+**Ubuntu 20.10**
+
+As of Ubuntu 20.10 the mongodb package has been dropped from the official repos due to licensing, and thus a seperate PPA has to be added:
+```
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+```
+Then update and install mongodb:
+```
+sudo apt update && sudo apt install mongodb-org
+```
+
+_note: if you have upgraded from earlier versions make sure to remove
+/var/lib/mongodb and /var/log/mongodb before the installation._
+
 **Arch**
 
 The AUR has a pre-build which can be installed with any AUR helper.
@@ -114,7 +131,7 @@ sudo systemctl enable --now mongodb
 ```
 Repeat `systemctl status mongodb` to make sure it is in fact running this time.
 
-note: the service file depends on your distribution, on Arch its `mongodb` and on Fedora its `mongod`.
+note: the service file depends on your distribution, on Arch its `mongodb` and on Fedora/Ubuntu 20.10 its `mongod`.
 
 Then run the mongo command to open the interactive shell
 ```
@@ -136,3 +153,4 @@ Resources:
 * Binary downloads: https://www.mongodb.com/try/download/community
 * How to Install MongoDB on Ubuntu: https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-from-the-default-apt-repositories-on-ubuntu-20-04
 * MongoDB on Fedora: https://fedoramagazine.org/how-to-get-mongodb-server-on-fedora/
+* MongoDB on ubuntu 20.10: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition
