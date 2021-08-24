@@ -23,7 +23,7 @@ Tip: You can setup the postgres server as a service (i.e., auto-start with your 
 
 1. Install [MongoDB](https://www.mongodb.com/) with Homebrew ([docs](https://github.com/mongodb/homebrew-brew))
     1. Run `brew tap mongodb/brew`
-    2. Install: `brew install mongodb-community`
+    2. Install: `brew install mongodb-community@4.4`
     3. Run daemon: `mongod --config /usr/local/etc/mongod.conf`
 2. Start the [mongo](https://docs.mongodb.com/manual/mongo/) shell: `mongo`
 3. Check whether `show dbs` lists all your current databases
