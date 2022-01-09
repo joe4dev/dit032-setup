@@ -1,4 +1,4 @@
-# DIT032 – Data Management Setup
+# DIT033 – Data Management Setup
 
 This documentation helps you to setup the software used during the Data Management course.
 
