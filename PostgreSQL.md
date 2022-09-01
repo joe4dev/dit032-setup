@@ -51,7 +51,7 @@ Steps to import the [MONDIAL database](https://www.dbis.informatik.uni-goettinge
     \q
     ```
 
-2. Download the schema (`create_schema.sql`) and input values (`insert_inputs.sql`) from [Canvas](https://chalmers.instructure.com/courses/12390/files/folder/assignments)
+2. Download the schema (`create_schema.sql`) and input values (`insert_inputs.sql`) from [Canvas](https://chalmers.instructure.com/courses/17445/files/folder/SQL#)
 3. Change directory where the downloaded files are
 
     ```shell
