@@ -28,4 +28,4 @@ Tip: You can setup the postgres server as a service (i.e., auto-start with your 
 2. Start the [mongo](https://docs.mongodb.com/manual/mongo/) shell: `mongo`
 3. Check whether `show dbs` lists all your current databases
 
-*Note: If 4.4 refuses to work, opt for the latest.*
+*Note: If 4.4 refuses to work, opt for the latest by using `mongodb-community`.*
